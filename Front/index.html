@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funcionesCategory.js"></script> 
+    <script type="text/javascript" src="js/funcionesComputer.js"></script> 
+    <script type="text/javascript" src="js/funcionesClient.js"></script> 
+    <script type="text/javascript" src="js/funcionesMessage.js"></script>
+    <script type="text/javascript" src="js/funcionesReservation.js"></script>
+    
+
+    <title style="color:#17202A">Reto3</title>
+</head>
+<body style = "background-color:#CCD1D1">
+
+    <!-////////////////////////////////CATEGORY/////////////////////////////////////////->
+    <div>
+        <h1 style="color:#17202A">Category</h1>
+        <br>
+        <div id="resultadoCategory"></div>
+        <br>
+        <button style = "color:#1e4242" onclick="traerInformacionCategorias()"> Consultar Categorias</button>
+        
+        <div>
+            <input type="text" id="name" placeholder="Nombre">
+            <input type="text" id="description" placeholder="Descripción">
+        </div>
+        <button style = "color:#1e4242" onclick="guardarInformacionCategorias()">Guardar Categorias</button>
+    </div>
+    
+    <!-////////////////////////////////COMPUTER/////////////////////////////////////////->
+    <h1 style="color:#17202A">Computers</h1>
+        <br>
+        <div id="resultadoComputer"></div>
+        <br>
+        <button style = "color:#1e4242" onclick="traerInformacionComputer()"> Consultar Computador</button>
+        
+        <div>
+            <input type="text" id="nameH" placeholder="Nombre">
+            <input type="text" id="brandH" placeholder="Brand">
+            <input type="number" id="categoryH" placeholder="Categoria">
+            <input type="number" id="yearH" placeholder="Year">
+            <input type="text" id="descriptionH" placeholder="Description">
+        </div>
+        <button style = "color:#1e4242" onclick="guardarInformacionComputer()">Guardar Computador</button>
+    </div>
+       
+    <!-////////////////////////////////CLIENT/////////////////////////////////////////->
+    <h1 style="color:#17202A">Clients</h1>
+        <br>
+        <div id="resultadoClient"></div>
+        <br>
+        <button style = "color:#1e4242" onclick="traerInformacionClient()"> Consultar Cliente</button>
+        
+        <div>
+            <input type="text" id="nameCl" placeholder="Name">
+            <input type="text" id="emailCl" placeholder="Email">
+            <input type="text" id="passwordCl" placeholder="Password">             
+            <input type="number" id="ageCl" placeholder="Age">
+        </div>
+        <button style = "color:#1e4242" onclick="guardarInformacionClient()">Guardar Cliente</button>
+    </div>   
+    
+    <!-////////////////////////////////MESSAGE/////////////////////////////////////////->
+    <h1 style="color:#17202A">Message</h1>
+        <br>
+        <div id="resultado4"></div>
+        <br>
+        <button style = "color:#1e4242" onclick="traerInformacionMensaje()"> Consultar Mensaje</button>
+        
+        <div>
+            <input type="text" id="MmessageText" placeholder="MessageText">
+            <input type="number" id="MidClient" placeholder="idClient">
+            <input type="number" id="MidComputer" placeholder="idComputer">
+        </div>
+        <button style = "color:#1e4242" onclick="guardarInformacionMensaje()">Guardar Mensaje</button>
+    </div> 
+    <!-////////////////////////////////RESERVATION/////////////////////////////////////////->
+    <h1 style="color:#17202A">Reservation</h1>
+        <br>
+        <div id="resultado5"></div>
+        <br>
+        <button style = "color:#1e4242" onclick="traerInformacionReservation()"> Consultar Reservacion</button>
+        
+        <div>
+            <input type="date" id="DstartDate" placeholder="startDate">
+            <input type="date" id="DdevolutionDate" placeholder="devolutionDate">
+            <input type="number" id="DidClient" placeholder="idClient">
+            <input type="number" id="DidComputer" placeholder="idComputer">
+        </div>
+        <button style = "color:#1e4242" onclick="guardarInformacionReservation()">Guardar Reservacion</button>
+    </div> 
+
+    </body>
+    </html>
